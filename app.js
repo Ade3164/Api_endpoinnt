@@ -24,5 +24,5 @@ app.get('/api', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}/api?slack_name=Idris_Adebayo&track=Backend`);
 });
