@@ -1,6 +1,7 @@
 {
   "name": "api_endpoinnt",
-  "version": "2.0.0",
+  "version": 2,
+
     "builds": [
        { "src": "app.js", "use": "@vercel/node" }
     ],
