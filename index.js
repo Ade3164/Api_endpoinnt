@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
-const port = 3000; 
+const port = 3000;
 
 app.get('/api', (req, res) => {
-  const slackName = 'Idris_Adebayo'; 
-  const track = 'Backend'; 
+  console.log('API endpoint accessed'); // Debugging line
+
+  const slackName = 'Idris_Adebayo';
+  const track = 'Backend';
   const currentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
   const now = new Date();
   const currentUtcTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString();
@@ -24,5 +26,5 @@ app.get('/api', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}/api?slack_name=Idris_Adebayo&track=Backend`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
